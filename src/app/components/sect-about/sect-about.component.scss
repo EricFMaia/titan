@@ -1,0 +1,100 @@
+.sect-about {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+
+  h3 {
+    line-height: 1.1;
+
+  }
+
+
+  &__img-container {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+
+    img {
+      width: 70%;
+      border-radius: 10px;
+
+    }
+
+  }
+
+  &__text-container {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 0px 30px;
+
+
+    &__certificates-container {
+      height: 150px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+
+      div {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+      }
+
+
+      img {
+        width: 7%;
+      }
+
+      p {
+        font-size: clamp(0.2rem, 1vw, 1rem);
+        color: var(--secondary);
+      }
+    }
+  }
+
+}
+
+@media (max-width: 768px) {
+  .sect-about__img-container {
+    display: none;
+  }
+
+  .sect-about__text-container {
+    width: 95%;
+
+    h2 {
+      font-size: clamp(0.5rem, 3vw, 1rem);
+
+    }
+
+    h3 {
+      font-size: clamp(1rem, 5vw, 2rem);
+
+    }
+
+    p {
+      font-size: clamp(0.5rem, 1.5vw, 0.8rem);
+
+    }
+
+  }
+
+  .sect-about__text-container__certificates-container {
+    p {
+      font-size: clamp(0.5rem, 2vw, 1rem);
+
+    }
+  }
+}

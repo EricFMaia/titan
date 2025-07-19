@@ -1,0 +1,24 @@
+:host {
+  height: 50%;
+  width: 25%;
+  margin: 5px;
+}
+
+.card-count {
+  padding: 15px;
+  border-left: 3px solid var(--light);
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+
+  &__title {
+    font-size: clamp(1rem, 2vw, 2rem);
+    font-weight: 600;
+  }
+
+  &__description {
+    font-size: clamp(0.3rem, 1vw, 1rem);
+
+  }
+}

@@ -1,0 +1,43 @@
+:root {
+  --primary: #1660FF;
+  --secondary: #1A2435;
+  --light: #f8f9fa;
+  --primary-dark: #2b51a4;
+  --secondary-dark: #0e131d;
+
+  --poppins-font: 'Poppins', sans-serif;
+  --anton-font: 'Anton', sans-serif;
+
+}
+
+
+.ti-c-text__subtitle {
+  color: var(--primary);
+  font-size: clamp(0rem, 2vw, 1.0rem);
+  font-weight: 700;
+}
+
+.ti-c-text__title {
+  text-wrap: nowrap;
+  font-size: clamp(0.5rem, 2.5vw, 2.5rem);
+  line-height: 1.1;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+  font-family: 'Anton', sans-serif;
+
+}
+
+.ti-c-text__description {
+  font-size: clamp(0rem, 1vw, 0.7rem);
+  font-weight: 400;
+
+  &__text-align {
+    text-align: center;
+
+  }
+
+
+}
+.ti-c-text__space-menu{
+  padding: 100px 0;
+}

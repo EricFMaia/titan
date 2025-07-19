@@ -1,0 +1,142 @@
+.sect-contact {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: var(--secondary);
+
+  p {
+    font-size: clamp(0.2rem, 1vw, 1rem);
+
+  }
+
+
+  &__text {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: var(--light);
+    padding: 0px 60px;
+
+    div {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      img {
+        width: 25px;
+        height: 25px;
+      }
+
+    }
+
+
+
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 450px;
+    width: 50%;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: var(--light);
+
+    &__container-inputs {
+      height: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+
+
+      h4 {
+        font-size: clamp(0.2rem, 1vw, 0.7rem);
+
+      }
+
+      input {
+        border-radius: 10px;
+        border: solid 2px var(--secondary);
+        padding: 8px;
+        font-size: 0.7rem
+      }
+
+      .textarea {
+        display: flex;
+        height: 70px;
+      }
+
+
+    }
+
+    button {
+      cursor: pointer;
+      height: 30px;
+      border-radius: 10px;
+      border: none;
+      background-color: var(--primary);
+      font-weight: 700;
+    }
+
+    button:active {
+      transform: translateY(1px);
+      background-color: var(--primary-dark);
+    }
+
+  }
+
+}
+
+@media (max-width: 768px) {
+  .sect-contact {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .sect-contact__text {
+    width: 95%;
+    padding: 0px 30px;
+
+    h2 {
+      font-size: clamp(0.5rem, 3vw, 1rem);
+
+    }
+
+    h3 {
+      font-size: clamp(1rem, 5vw, 2rem);
+
+    }
+
+    p {
+      font-size: clamp(0.5rem, 1.5vw, 0.8rem);
+
+    }
+
+    div p {
+      font-size: clamp(0.5rem, 2vw, 1rem);
+
+    }
+
+  }
+
+  .sect-contact__form {
+    height: 550px;
+    width: 90%;
+
+    h4,
+    p {
+      font-size: clamp(0.5rem, 2vw, 1rem);
+    }
+
+    button {
+      font-size: clamp(0.5rem, 2.5vw, 1.5rem);
+      height: 50px;
+    }
+
+  }
+}

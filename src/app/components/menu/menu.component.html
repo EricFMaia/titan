@@ -1,0 +1,30 @@
+<div class="menu">
+  <div class="menu__container__logo">
+    <img class="menu__logo" src="/assets/img/Logo.svg" alt="Titan Logo" />
+  </div>
+
+  <nav class="menu__container__links">
+    <a href="#Section-home">Home</a>
+    <a href="#Section-works">Obras</a>
+    <a href="#Section-about">Sobre Nós</a>
+    <a href="#Section-contact">Contato</a>
+    <button class="btn__menu" type="button">Solicitar orçamento</button>
+    <img
+      class="menu-hamburger"
+      id="menuMobile"
+      src="/assets/img/Menu.svg"
+      alt=""
+      (click)="togglePropoperty()"
+    />
+  </nav>
+</div>
+<div class="menu-mobile" *ngIf="isDisable">
+  <nav class="menu-mobile__container__links">
+    <a href="#Section-home" (click)="togglePropoperty()">Home</a>
+    <a href="#Section-works" (click)="togglePropoperty()">Obras</a>
+    <a href="#Section-about" (click)="togglePropoperty()">Sobre Nós</a>
+    <a href="#Section-contact" (click)="togglePropoperty()">Contato</a>
+    <button class="btn__menu-mobile" type="button">Solicitar orçamento</button>
+  </nav>
+  <img class="menu-mobile__close" id="menuCloseMobile" src="/assets/img/Close.svg" alt="" (click)="togglePropoperty()"/>
+</div>
