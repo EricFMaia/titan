@@ -34,6 +34,8 @@ https://titan-iota.vercel.app
 Se quiser testar o projeto aí no seu computador:
 
 cd titan
+
 npm install
+
 ng serve
 
