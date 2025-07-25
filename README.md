@@ -1,27 +1,39 @@
-# Titan
+# Titan Engenharia 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.0.
+Esse é um projeto pessoal que desenvolvi para treinar e mostrar meus conhecimentos com Angular. A ideia foi criar um site institucional para uma empresa fictícia de engenharia chamada **Titan Engenharia**.
 
-## Development server
+O site é todo feito em Angular, com uma estrutura bem organizada em componentes, rotas e responsividade.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+---
 
-## Code scaffolding
+## De uma olhada no site:
+https://titan-iota.vercel.app
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+---
 
-## Build
+## Tecnologias que usei
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- **Angular** 17.3.17  
+- **Node.js** 20.9.0  
+- **NPM** 10.4.0  
+- **TypeScript** 5.2.2  
 
-## Running unit tests
+---
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## O que o site tem
 
-## Running end-to-end tests
+- Página inicial com apresentação da empresa  
+- Seções de serviços, equipe e contato  
+- Design responsivo (funciona bem em celular e computador)  
+- Código limpo e dividido em componentes Angular
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+---
 
-## Further help
+## Como rodar localmente
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Se quiser testar o projeto aí no seu computador:
+
+cd titan
+npm install
+ng serve
+
